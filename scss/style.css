@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+* body {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body main .cards {
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 460px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+* body main .cards .front-card {
+  background-image: url(../images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  height: 230px;
+  width: 400px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+* body main .cards .front-card p {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+* body main .cards .front-card .span-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+* body main .cards .front-card .span-field .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body main .cards .front-card .span-field span {
+  font-size: 17px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+* body main .cards .back-card {
+  background-image: url(../images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  height: 230px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(220px);
+          transform: translateX(220px);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+* body main .cards .back-card p {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+* body main .form {
+  height: 100vh;
+  width: 1075px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main .form form {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+* body main .form form section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+* body main .form form section .name-error, * body main .form form section .number-error, * body main .form form section .validate-error, * body main .form form section .cvc-error {
+  color: transparent;
+}
+
+* body main .form form input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #dedddf;
+  outline: 0;
+  cursor: pointer;
+}
+
+* body main .form form input::-webkit-input-placeholder {
+  color: #8e8593;
+  letter-spacing: .5px;
+}
+
+* body main .form form input:-ms-input-placeholder {
+  color: #8e8593;
+  letter-spacing: .5px;
+}
+
+* body main .form form input::-ms-input-placeholder {
+  color: #8e8593;
+  letter-spacing: .5px;
+}
+
+* body main .form form input::placeholder {
+  color: #8e8593;
+  letter-spacing: .5px;
+}
+
+* body main .form form p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+* body main .form form .expires-date-cvc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+* body main .form form .expires-date-cvc .expires-date {
+  width: 50%;
+}
+
+* body main .form form .expires-date-cvc .expires-date .expires-date-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+* body main .form form .expires-date-cvc .expires-date .expires-date-inputs input {
+  width: 40%;
+  text-align: center;
+}
+
+* body main .form form .expires-date-cvc .cvc-container {
+  width: 50%;
+}
+
+* body main .form form button {
+  padding: 12px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #21092f;
+  color: white;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  outline: 0;
+}
+
+* body main .form form button:focus {
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1350px) {
+  * body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 100px;
+  }
+  * body main .cards {
+    background-image: url(../images/bg-main-mobile.png);
+    width: 100%;
+    height: 40vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * body main .cards .front-card, * body main .cards .back-card {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    position: absolute;
+    height: 200px;
+    width: 350px;
+  }
+  * body main .cards .front-card {
+    margin-top: 210px;
+    margin-right: 200px;
+    z-index: 9;
+  }
+  * body main .cards .back-card {
+    margin-bottom: 20px;
+  }
+  * body main .form {
+    width: 100%;
+    height: 70vh;
+  }
+  * body main .form form {
+    gap: 0px;
+  }
+  * body main .form form section {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * body main .cards .back-card {
+    right: 40px;
+    height: 180px;
+    width: 300px;
+    background-position: center;
+  }
+  * body main .cards .back-card p {
+    font-size: 14px;
+  }
+  * body main .cards .front-card {
+    left: 100px;
+    height: 180px;
+    width: 300px;
+    margin-top: 185px;
+  }
+  * body main .cards .front-card #card-number-key {
+    font-size: 10px;
+  }
+  * body main .cards .front-card .span-field #card-name-key {
+    font-size: 12px;
+  }
+  * body main .cards .front-card .exp #card-exp-month,
+  * body main .cards .front-card .exp #card-exp-year {
+    font-size: 12px;
+  }
+  * body main .form form {
+    width: 95%;
+  }
+  * body main .form form input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  * body main {
+    gap: 0;
+  }
+  * body main .cards .front-card {
+    left: 20px;
+    height: 170px;
+    margin-top: 150px;
+  }
+  * body main .cards .front-card p, * body main .cards .front-card span {
+    font-size: 14px;
+  }
+  * body main .cards .back-card {
+    right: 20px;
+    height: 170px;
+    margin-bottom: 50px;
+  }
+  * body main .cards .back-card span {
+    font-size: 14px;
+  }
+  * body main .form form p, * body main .form form span {
+    font-size: 14px;
+  }
+  * body main .form form input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  * body main .form form input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  * body main .form form input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  * body main .form form input::placeholder {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

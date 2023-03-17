@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Completed State</title>
+    <link rel="stylesheet" href="../scss/completedState.css">
+</head>
+<body>
+    <main class="container">
+        <article class="cards">
+            <section class="front-card">
+              <figure>
+                <img src="../images/card-logo.svg" alt="logo-card" />
+              </figure>
+              <p id="card-number-t"><!--0000 0000 0000 0000--></p>
+              <section class="span-field">
+                <span id="card-name-t"><!--Jane Appleseed--></span>
+                <section class="exp" style="display: flex;">
+                  <span id="card-validate-m"><!--00/00--></span>
+                  <span id="card-validate-y"></span>
+                </section>
+              </section>
+            </section>
+    
+            <section class="back-card">
+              <p id="card-cvc-t"><!--000--></p>
+            </section>
+          </article>
+
+
+          <section class="completed">
+
+            <section class="completed-card">
+                <!-- Completed state start -->
+                <figure>
+                    <img src="../images/icon-complete.svg" alt="completed-icon">
+                </figure>
+               <h1>Thank you!</h1> 
+                <p>We've added your card details</p>  
+               <a href="../index.html">
+                <button id="btn-continue">Continue</button>
+               </a>
+            </section>
+            </section>
+    </main>
+
+    <script>
+      document.getElementById("card-name-t").innerText = sessionStorage.getItem("cardName").toLocaleUpperCase();
+      document.getElementById("card-number-t").innerText = sessionStorage.getItem('cardNumber');
+      document.getElementById("card-validate-m").innerText = sessionStorage.getItem("expiresMonth");
+      document.getElementById("card-validate-y").innerText = sessionStorage.getItem('expiresYear');
+      document.getElementById('card-cvc-t').innerText = sessionStorage.getItem("cardCvc");
+    </script>
+</body>
+</html>
