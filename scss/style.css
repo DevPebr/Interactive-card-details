@@ -257,7 +257,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 80px;
+    gap: 60px;
   }
   * body main .cards {
     background-image: url(../images/bg-main-mobile.png);
@@ -266,18 +266,20 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
   }
   * body main .cards .front-card, * body main .cards .back-card {
     -webkit-transform: translate(0);
             transform: translate(0);
     position: absolute;
-    height: 200px;
-    width: 350px;
+    height: 190px;
+    width: 330px;
   }
   * body main .cards .front-card {
-    margin-top: 210px;
+    margin-top: 217px;
     margin-right: 200px;
     z-index: 9;
+    gap: 5px;
   }
   * body main .cards .front-card #card-number-key {
     font-size: 16px;
@@ -290,14 +292,29 @@
     font-size: 12px;
   }
   * body main .cards .back-card {
-    margin-bottom: 20px;
+    background-position: center;
   }
   * body main .form {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
   }
   * body main .form form {
     gap: 0px;
+  }
+  * body main .form form p, * body main .form form span {
+    font-size: 15px;
+  }
+  * body main .form form input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  * body main .form form input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  * body main .form form input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  * body main .form form input::placeholder {
+    font-size: 15px;
   }
   * body main .form form section {
     gap: 0;
@@ -306,7 +323,10 @@
 
 @media screen and (max-width: 600px) {
   * body main {
-    gap: 0px;
+    gap: 30px;
+  }
+  * body main .cards {
+    padding: 0;
   }
   * body main .cards .back-card {
     right: 40px;
@@ -358,9 +378,6 @@
 }
 
 @media screen and (max-width: 450px) {
-  * body main {
-    gap: 0;
-  }
   * body main .cards .front-card {
     left: 20px;
     height: 170px;

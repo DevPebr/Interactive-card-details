@@ -90,6 +90,7 @@
   font-size: 18px;
   color: white;
   letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 * body main .cards .back-card {
@@ -173,5 +174,127 @@
   cursor: pointer;
   color: white;
   letter-spacing: .5px;
+}
+
+@media screen and (max-width: 1240px) {
+  * body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  * body main .cards {
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  * body main .cards .front-card {
+    width: 320px;
+    height: 180px;
+    margin-top: 185px;
+    margin-right: 100px;
+    z-index: 9;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    gap: 5px;
+  }
+  * body main .cards .front-card #card-number-t {
+    font-size: 14px;
+  }
+  * body main .cards .front-card .span-field #card-name-t {
+    font-size: 14px;
+  }
+  * body main .cards .front-card .exp #card-validate-m,
+  * body main .cards .front-card .exp #card-validate-y {
+    font-size: 12px;
+  }
+  * body main .cards .back-card {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    background-position: center;
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  * body main .completed {
+    width: 100%;
+    height: 65vh;
+  }
+  * body main .completed .completed-card {
+    gap: 5px;
+    width: 90%;
+  }
+  * body main .completed .completed-card p {
+    font-size: 16px;
+  }
+  * body main .completed .completed-card button {
+    padding: 10px 100px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  * body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  * body main .cards {
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0 0 0;
+  }
+  * body main .cards .front-card, * body main .cards .back-card {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    position: absolute;
+    height: 170px;
+    width: 300px;
+  }
+  * body main .cards .front-card {
+    margin-top: 190px;
+    margin-right: 0px;
+    z-index: 9;
+  }
+  * body main .cards .front-card #card-number-key {
+    font-size: 16px;
+  }
+  * body main .cards .front-card .span-field #card-name-key {
+    font-size: 14px;
+  }
+  * body main .cards .front-card .exp #card-exp-month,
+  * body main .cards .front-card .exp #card-exp-year {
+    font-size: 12px;
+  }
+  * body main .cards .back-card {
+    margin-bottom: 5px;
+    right: 50px;
+  }
+  * body main .completed {
+    width: 100vw;
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 65vh;
+  }
 }
 /*# sourceMappingURL=completedState.css.map */

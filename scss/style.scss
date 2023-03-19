@@ -182,24 +182,26 @@
 
         main {
             flex-direction: column;
-            gap: 80px;
+            gap: 60px;
             .cards {
                 background-image: url(../images/bg-main-mobile.png);
                 width: 100%;
                 height: 40vh;
                 align-items: center;
+                padding: 0;
 
                 .front-card, .back-card {
                     transform: translate(0);
                     position: absolute;
-                    height: 200px;
-                    width: 350px;
+                    height: 190px;
+                    width: 330px;
                 }
 
                 .front-card {
-                    margin-top: 210px;
+                    margin-top: 217px;
                     margin-right: 200px;
                     z-index: 9;
+                    gap: 5px;
 
                     #card-number-key {
                         font-size: 16px;
@@ -221,15 +223,27 @@
                 }
 
                 .back-card {
-                    margin-bottom: 20px;
+                    background-position: center;
                 }
+                
             } //.cards
 
             .form {
                 width: 100%;
-                height: 70vh;
+                height: 60vh;
 
                 form {
+
+                    p, span {
+                        font-size: 15px;
+                    }
+
+                    input {
+
+                        &::placeholder {
+                            font-size: 15px;
+                        }
+                    }
                     gap: 0px;
 
                     section {
@@ -247,8 +261,9 @@
 
        body {
         main {
-            gap: 0px;
+            gap: 30px;
             .cards {
+                padding: 0;
                 .back-card {
                     right: 40px;
                     height: 170px;
@@ -314,7 +329,7 @@
         body {
             
             main {
-                gap: 0;
+                
                 .cards {
                     .front-card {
                         left: 20px;

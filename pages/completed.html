@@ -41,7 +41,7 @@
             <section class="completed-card">
                 <!-- Completed state start -->
                 <figure>
-                    <img src="../images/icon-complete.svg" alt="completed-icon">
+                    <img src="../images/icon-complete.svg" alt="completed-icon" width="70px" height="70px">
                 </figure>
                <h1>Thank you!</h1> 
                 <p>We've added your card details</p>  
@@ -53,7 +53,7 @@
     </main>
 
     <script>
-      document.getElementById("card-name-t").innerText = sessionStorage.getItem("cardName").toLocaleUpperCase();
+      document.getElementById("card-name-t").innerText = sessionStorage.getItem("cardName");
       document.getElementById("card-number-t").innerText = sessionStorage.getItem('cardNumber');
       document.getElementById("card-validate-m").innerText = sessionStorage.getItem("expiresMonth");
       document.getElementById("card-validate-y").innerText = sessionStorage.getItem('expiresYear');
