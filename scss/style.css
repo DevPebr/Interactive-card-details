@@ -257,7 +257,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 100px;
+    gap: 80px;
   }
   * body main .cards {
     background-image: url(../images/bg-main-mobile.png);
@@ -279,6 +279,16 @@
     margin-right: 200px;
     z-index: 9;
   }
+  * body main .cards .front-card #card-number-key {
+    font-size: 16px;
+  }
+  * body main .cards .front-card .span-field #card-name-key {
+    font-size: 14px;
+  }
+  * body main .cards .front-card .exp #card-exp-month,
+  * body main .cards .front-card .exp #card-exp-year {
+    font-size: 12px;
+  }
   * body main .cards .back-card {
     margin-bottom: 20px;
   }
@@ -295,10 +305,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  * body main {
+    gap: 0px;
+  }
   * body main .cards .back-card {
     right: 40px;
-    height: 180px;
-    width: 300px;
+    height: 170px;
+    width: 290px;
     background-position: center;
   }
   * body main .cards .back-card p {
@@ -306,9 +319,10 @@
   }
   * body main .cards .front-card {
     left: 100px;
-    height: 180px;
-    width: 300px;
-    margin-top: 185px;
+    height: 170px;
+    width: 290px;
+    margin-top: 175px;
+    gap: 10px;
   }
   * body main .cards .front-card #card-number-key {
     font-size: 10px;
@@ -326,6 +340,21 @@
   * body main .form form input {
     font-size: 14px;
   }
+  * body main .form form input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  * body main .form form input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  * body main .form form input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  * body main .form form input::placeholder {
+    font-size: 12px;
+  }
+  * body main .form form p, * body main .form form span {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -336,9 +365,6 @@
     left: 20px;
     height: 170px;
     margin-top: 150px;
-  }
-  * body main .cards .front-card p, * body main .cards .front-card span {
-    font-size: 14px;
   }
   * body main .cards .back-card {
     right: 20px;

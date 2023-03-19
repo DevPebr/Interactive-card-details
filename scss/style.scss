@@ -182,7 +182,7 @@
 
         main {
             flex-direction: column;
-            gap: 100px;
+            gap: 80px;
             .cards {
                 background-image: url(../images/bg-main-mobile.png);
                 width: 100%;
@@ -200,6 +200,24 @@
                     margin-top: 210px;
                     margin-right: 200px;
                     z-index: 9;
+
+                    #card-number-key {
+                        font-size: 16px;
+                    }
+
+                    .span-field {
+                        #card-name-key {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .exp {
+                        #card-exp-month,
+                        #card-exp-year {
+                            font-size: 12px;
+                        }
+                    }
+                 
                 }
 
                 .back-card {
@@ -229,11 +247,12 @@
 
        body {
         main {
+            gap: 0px;
             .cards {
                 .back-card {
                     right: 40px;
-                    height: 180px;
-                    width: 300px;
+                    height: 170px;
+                    width: 290px;
                     background-position: center;
 
 
@@ -244,10 +263,11 @@
 
                 .front-card {
                     left: 100px;
-                    height: 180px;
-                    width: 300px;
-                    margin-top: 185px;
-
+                    height: 170px;
+                    width: 290px;
+                    margin-top: 175px;
+                    gap: 10px;
+                   
                     #card-number-key {
                         font-size: 10px;
                     }
@@ -270,12 +290,20 @@
             .form {
 
                 form {
+
                     width: 95%;
 
                     input {
                         font-size: 14px;
+
+                        &::placeholder {
+                            font-size: 12px;
+                        }
                     }
                     
+                    p, span {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -293,9 +321,7 @@
                         height: 170px;
                         margin-top: 150px;
 
-                        p, span {
-                            font-size: 14px;
-                        }
+                        
                     }
 
                     .back-card {
