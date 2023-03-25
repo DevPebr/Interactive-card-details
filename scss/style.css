@@ -257,7 +257,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 60px;
+    gap: 80px;
   }
   * body main .cards {
     background-image: url(../images/bg-main-mobile.png);
@@ -323,10 +323,11 @@
 
 @media screen and (max-width: 600px) {
   * body main {
-    gap: 30px;
+    gap: 50px;
   }
   * body main .cards {
-    padding: 0;
+    padding: 50px 0 0 0;
+    height: 35vh;
   }
   * body main .cards .back-card {
     right: 40px;
@@ -353,6 +354,9 @@
   * body main .cards .front-card .exp #card-exp-month,
   * body main .cards .front-card .exp #card-exp-year {
     font-size: 12px;
+  }
+  * body main .form {
+    height: 65vh;
   }
   * body main .form form {
     width: 95%;
